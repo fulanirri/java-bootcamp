@@ -1,52 +1,50 @@
 package oopExercises.ej1_1;
 
 public class Circle {
-	private double radius;
-	private String color;
 
-	// Constructor
+    private double radius;
+    private String color;
 
-	public Circle() {
-		this.radius = 1.0;
-		this.color = "red";
-	}
+    // Constructor
+    public Circle() {
 
-	public Circle(double radius) {
-		this.radius = radius;
-		color = "red";
-	}
+        this(1.0);
 
-	public Circle(double radius, String string) {
-		this.radius = radius;
-		this.color = string;
-	}
+    }
 
-	// Getter & Setters
+    public Circle(double radius) {
+        this(radius, "red");
+    }
 
-	public double getRadius() {
-		return radius;
-	}
+    public Circle(double radius, String string) {
+        this.radius = radius;
+        this.color = string;
+    }
 
-	public void setRadius(double radius) {
-		this.radius = radius;
-	}
+    // Getter & Setters
+    public double getRadius() {
+        return radius;
+    }
 
-	public String getColor() {
-		return color;
-	}
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
 
-	public void setColor(String color) {
-		this.color = color;
-	}
+    public String getColor() {
+        return color;
+    }
 
-	// Methods
+    public void setColor(String color) {
+        this.color = color;
+    }
 
-	public double getArea() {
-		return radius * radius * Math.PI;
-	}
+    // Methods
+    public double getArea() {
+        return radius * radius * Math.PI;
+    }
 
-	public String toString() {
-		return "Circle: radius=" + radius + " color=" + color;
-	}
+    public String toString() {
+        return "Circle: radius=" + radius + " color=" + color;
+    }
 
 }
