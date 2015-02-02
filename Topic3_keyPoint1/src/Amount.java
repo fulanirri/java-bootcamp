@@ -92,9 +92,7 @@ public class Amount {
       tradBillions = convertLessThanOneThousand(billions)
       + " billion ";
       break;
-    default :
-      tradBillions = convertLessThanOneThousand(billions)
-      + " billion ";
+    
     }
     String result =  tradBillions;
 
@@ -107,10 +105,8 @@ public class Amount {
       tradMillions = convertLessThanOneThousand(millions)
          + " million ";
       break;
-    default :
-      tradMillions = convertLessThanOneThousand(millions)
-         + " million ";
-    }
+    
+      }
     result =  result + tradMillions;
 
     String tradHundredThousands;
