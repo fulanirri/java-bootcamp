@@ -44,9 +44,9 @@ DROP TABLE IF EXISTS `Course_has_Student`;
 CREATE TABLE `Course_has_Student` (
   `Course_idCourse` int(11) NOT NULL,
   `Student_regNum` int(11) NOT NULL,
-  `parcial1` mediumtext,
-  `parcial2` mediumtext,
-  `parcial3` mediumtext,
+  `parcial1` LONG,
+  `parcial2` LONG,
+  `parcial3` LONG,
   `final` mediumtext,
   PRIMARY KEY (`Course_idCourse`,`Student_regNum`),
   KEY `fk_Course_has_Student_Student1` (`Student_regNum`),
@@ -62,7 +62,7 @@ CREATE TABLE `Course_has_Student` (
 
 LOCK TABLES `Course_has_Student` WRITE;
 /*!40000 ALTER TABLE `Course_has_Student` DISABLE KEYS */;
-INSERT INTO `Course_has_Student` VALUES (1,1,'7','7','7','9'),(1,2,'5','5','5','4'),(1,3,'5.8','4.9','10','9'),(1,4,'7.9','8.5','5','6'),(1,20,'8.8','7.9','8.9','9.99'),(2,5,'5.9','8','9.9','8.8'),(2,6,'7.9','8.5','5','6'),(2,7,'5.8','4.9','10','9'),(2,8,'5','5','5','4'),(3,9,'7.9','8.5','5','6'),(3,10,'5.8','4.9','10','9'),(3,11,'7.9','8.5','5','6'),(3,12,'7','7','7','9'),(4,13,'5','5','5','4'),(4,14,'7','7','7','9'),(4,15,'7.9','8.5','5','6'),(4,16,'5.9','8','9.9','8.8'),(4,20,'8.8','7.9','8.9','7'),(5,17,'7','7','7','9'),(5,18,'7','7','7','9'),(5,19,'5.9','8','9.9','8.8'),(5,20,'7.9','8.5','5','6');
+INSERT INTO `Course_has_Student` VALUES (1,1,7,7,7,9),(1,2,5,5,5,4),(1,3,5.8,4.9,10,9),(1,4,7.9,8.5,5,6),(1,20,8.8,7.9,8.9,9.99),(2,5,5.9,8,9.9,8.8),(2,6,7.9,8.5,5,6),(2,7,5.8,4.9,10,9),(2,8,5,5,5,4),(3,9,7.9,8.5,5,6),(3,10,5.8,4.9,10,9),(3,11,7.9,8.5,5,6),(3,12,7,7,7,9),(4,13,5,5,5,4),(4,14,7,7,7,9),(4,15,7.9,8.5,5,6),(4,16,5.9,8,9.9,8.8),(4,20,8.8,7.9,8.9,7),(5,17,7,7,7,9),(5,18,7,7,7,9),(5,19,5.9,8,9.9,8.8),(5,20,7.9,8.5,5,6);
 /*!40000 ALTER TABLE `Course_has_Student` ENABLE KEYS */;
 UNLOCK TABLES;
 
