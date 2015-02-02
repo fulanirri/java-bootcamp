@@ -1,8 +1,0 @@
-shoppingcart/Item.class
-shoppingcart/ShoppingCartService.class
-shoppingcart/Cart.class
-shoppingcart/ServiceFactory.class
-shoppingcart/ShoppingCartServiceProxy.class
-shoppingcart/ShoppingCartWebService.class
-shoppingcart/ShoppingCartApiApplication.class
-shoppingcart/ShoppingCartServiceImp.class
