@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/highschool?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">german</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping class="HighSchool.Pojos.Schedule"/>
+    <mapping class="HighSchool.Pojos.Student"/>
+    <mapping class="HighSchool.Pojos.Course"/>
+    <mapping class="HighSchool.Pojos.CourseHasStudent"/>
+    <mapping class="HighSchool.Pojos.Teacher"/>
+    <mapping class="HighSchool.Pojos.Hour"/>
+    <mapping class="HighSchool.Pojos.ScheduleId"/>
+    <mapping class="HighSchool.Pojos.CourseHasStudentId"/>
+    <mapping class="HighSchool.Pojos.WeekDay"/>
+    <mapping class="HighSchool.Pojos.TeacherHasCourse"/>
+  </session-factory>
+</hibernate-configuration>
