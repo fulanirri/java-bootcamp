@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author german
  */
 @RestController
-public class BookingControllerHibernate {
+public class BookingController {
 
 //Date formatter use to parse the given  timestamp 
     java.text.SimpleDateFormat sdf
