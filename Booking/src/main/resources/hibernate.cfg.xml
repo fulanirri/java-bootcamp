@@ -7,8 +7,8 @@
     <property name="hibernate.connection.url">jdbc:hsqldb:hsql://localhost/xdb</property>
     <property name="hibernate.connection.username">SA</property>
     <property name="hibernate.show_sql">true</property>
-    <mapping class="Booking.hibernatePojos.Meetting"/>
-    <mapping class="Booking.hibernatePojos.Room"/>
-    <mapping class="Booking.hibernatePojos.Client"/>
+    <mapping class="Booking.Pojos.Meetting"/>
+    <mapping class="Booking.Pojos.Room"/>
+    <mapping class="Booking.Pojos.Client"/>
   </session-factory>
 </hibernate-configuration>
